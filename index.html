@@ -1,20 +1,50 @@
 <html>
     <head>
         <link href="style.css" rel="stylesheet">
+        <style>
+            .circle_pic{
+                border: solid red 1px;
+                border-radius: 50%;
+            
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+            
+            #profile_pic{
+                width: 50px;
+                height: 50px;
+            }
+            
+            .highlight_pic{
+                width: 35px;
+                height: 35px;
+            
+                margin-left:auto;
+                margin-right:auto;
+            }
+            
+            #highlight_area{
+                display:grid;
+                grid-template-columns: 1fr 1fr;
+            }
+            </style>
     </head>
     <body>
         <div>
             <img src="https://www.instagram.com/static/images/web/mobile_nav_type_logo-2x.png/1b47f9d0e595.png"/>
             <input type="search" value="검색"/>
         </div>
-        <div class="highlight">
-            <img src="image/profile.jpg" width="50px"/>
+        <div id="profile">
+            <div id="profile_pic">
+                <img class="circle_pic" src="image/profile.jpg"/>
+            </div>
             <div>
-            <h2>min_jirung.E</h2>
-            <button>프로필 편집</button>
+                <h2>min_jirung.E</h2>
+                <button>프로필 편집</button>
             </div>
         </div>
-        <div id="profile">
+        <div>
             <p>
                 <strong>
                 박민지(minji Park)<br/>
@@ -27,34 +57,34 @@
                 </a>
             </p>
         </div>
-        <div>
-            <div>
-                <div>
-                    <img src="image/hl 1.jpg" width="35px"/>
+        <div id="highlight_area">
+            <div class="highlight">
+                <div class="highlight_pic">
+                    <img class="circle_pic" src="image/hl 1.jpg"/>
                 </div>
                 <div>
                     ?
                 </div>
             </div>
-            <div>
-                <div>
-                    <img src="image/hl 2.jpg" width="35px"/>
+            <div class="highlight">
+                <div class="highlight_pic">
+                    <img class="circle_pic" src="image/hl 2.jpg"/>
                 </div>
                 <div>
                     ?
                 </div>
             </div>
         </div>
-        <div>
-            <div>
+        <div id="stat_bar">
+            <div class="stat">
                 게시물<br/>
                 133
             </div>
-            <div>
+            <div class="stat">
                 팔로워<br/>
                 408
             </div>
-            <div>
+            <div class="stat">
                 팔로우<br/>
                 189
             </div>
@@ -63,15 +93,22 @@
 
         </div>
         <div>
-            <img src="image/thumnails/1.jpg" width="32%"/>
-            <img src="image/thumnails/2.jpg" width="32%"/>
-            <img src="image/thumnails/3.jpg" width="32%"/>
-            <img src="image/thumnails/4.jpg" width="32%"/>
-            <img src="image/thumnails/5.jpg" width="32%"/>
-            <img src="image/thumnails/6.jpg" width="32%"/>
-            <img src="image/thumnails/7.jpg" width="32%"/>
-            <img src="image/thumnails/8.jpg" width="32%"/>
-            <img src="image/thumnails/9.jpg" width="32%"/>
+            <div class="thumnail_grid">
+            <img src="image/thumnails/1.jpg" class="thumnail"/>
+            <img src="image/thumnails/2.jpg" class="thumnail"/>
+            <img src="image/thumnails/3.jpg" class="thumnail"/>
+            </div>
+            <div class="thumnail_grid">
+            <img src="image/thumnails/4.jpg" class="thumnail"/>
+            <img src="image/thumnails/5.jpg" class="thumnail"/>
+            <img src="image/thumnails/6.jpg" class="thumnail"/>
+            </div>
+            <div class="thumnail_grid">
+            <img src="image/thumnails/7.jpg" class="thumnail"/>
+            <img src="image/thumnails/8.jpg" class="thumnail"/>
+            <img src="image/thumnails/9.jpg" class="thumnail"/>
+            </div>
         </div>
     </body>
 </html>
+
