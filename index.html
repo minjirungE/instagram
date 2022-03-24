@@ -1,46 +1,28 @@
 <html>
     <head>
         <link href="style.css" rel="stylesheet">
-        <style>
-            .circle_pic{
-                border: solid red 1px;
-                border-radius: 50%;
-            
-                width: 100%;
-                height: 100%;
-                object-fit: cover;
-            }
-            
-            #profile_pic{
-                width: 50px;
-                height: 50px;
-            }
-            
-            .highlight_pic{
-                width: 35px;
-                height: 35px;
-            
-                margin-left:auto;
-                margin-right:auto;
-            }
-            
-            #highlight_area{
-                display:grid;
-                grid-template-columns: 1fr 1fr;
-            }
-            </style>
+        <link href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" rel="stylesheet">
     </head>
     <body>
-        <div>
+        <div id="top">
             <img src="https://www.instagram.com/static/images/web/mobile_nav_type_logo-2x.png/1b47f9d0e595.png"/>
             <input type="search" value="검색"/>
+            <div>
+                <i class="fas fa-home"></i>
+                <i class="fas fa-paper-plane"></i>
+                <i class="fas fa-compass"></i>
+                <i class="fas fa-heart"></i>
+            </div>
         </div>
         <div id="profile">
             <div id="profile_pic">
                 <img class="circle_pic" src="image/profile.jpg"/>
             </div>
-            <div>
-                <h2>min_jirung.E</h2>
+            <div id="profile_info">
+                <div id="id">
+                    min_jirung.E
+                    <i class="fas fa-cog"></i>
+                </div>
                 <button>프로필 편집</button>
             </div>
         </div>
@@ -74,6 +56,8 @@
                     ?
                 </div>
             </div>
+            <div></div>
+
         </div>
         <div id="stat_bar">
             <div class="stat">
@@ -89,7 +73,22 @@
                 189
             </div>
         </div>
-        <div>
+        <div id="sub_icons">
+            <div class="selected">
+                <i class="fas fa-border-all"></i>   
+            </div>
+            <div>
+                <i class="fas fa-film"></i>
+            </div>
+            <div>
+                <i class="fas fa-play-circle"></i>
+            </div>
+            <div>
+                <i class="fas fa-bookmark"></i>
+            </div>
+            <div>
+                <i class="fas fa-user-tag"></i>
+            </div>
 
         </div>
         <div>
