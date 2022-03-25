@@ -6,12 +6,12 @@ document.addEventListener("DOMContentLoaded",
 
         configID.addEventListener("click", 
             function(e) {
-                idText.textContent = prompt("ìƒˆë¡œìš´ ì•„ì´ë””ë¥¼ ì…ë ¥í•˜ì„¸ìš”")
+                idText.textContent = prompt("¾ÆÀÌµğ¸¦ »õ·Î ÀÔ·ÂÇØÁÖ¼¼¿ä")
             }
         )
     
 
-        let profileEditButton = document.querySelector("profile_info button")
+        let profileEditButton = document.querySelector("#profile_info button")
         let userInfo = document.querySelector("#userInfo")
         let summary = document.querySelector("#summary")
         let profileDetail = document.querySelector("#profileDetail")
@@ -33,7 +33,7 @@ document.addEventListener("DOMContentLoaded",
 
                     profileDetail.innerHTML = _profileDetail
 
-                    e.target.textContent = "í”„ë¡œí•„ í¸ì§‘"
+                    e.target.textContent = "ÇÁ·ÎÇÊ ÆíÁı"
                     changing = false
                 }
                 else{
@@ -45,11 +45,10 @@ document.addEventListener("DOMContentLoaded",
                     summary.innerHTML = "<input value=" + _summary + "></input>"
                     profileDetail.innerHTML = "<input value=" + _profileDetail + "></input>"
 
-                    e.target.textContent = "í”„ë¡œí•„ í¸ì§‘ ì™„ë£Œ"
+                    e.target.textContent = "ÇÁ·ÎÇÊ ÆíÁı ¿Ï·á"
                     changing = true
                 }
             }
         )
     }
 )
-
